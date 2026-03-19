@@ -158,12 +158,12 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
-  & img{
+  & img {
     /* border: 2px solid rgb(255, 240, 240); */
-  border-radius: 50%;
-  width: 30px;
-  aspect-ratio: 1/1;
-  object-fit: cover;
+    border-radius: 50%;
+    width: 30px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
   }
 }
 
@@ -267,7 +267,7 @@ body {
 }
 .sec1_box1 {
   height: 18%;
-  min-width: 13rem;
+  /* min-width: 13rem; */
   background-color: rgb(205, 182, 191);
   /* pading: 1rem; */
   /* border: 1px solid rgb(117, 125, 120); */
@@ -342,13 +342,13 @@ body {
   &:hover {
     cursor: pointer;
   }
-  & img{
-   border: 1px solid rgb(255, 240, 240);
-   object-fit:cover;
-   width: 79px;
-   aspect-ratio: 1/1;
-   border-radius: 50%;
- }
+  & img {
+    border: 1px solid rgb(255, 240, 240);
+    object-fit: cover;
+    width: 79px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
 }
 
 .bio {
@@ -511,7 +511,6 @@ a img {
   }
 }
 
-
 .sec1_box4_first {
   /* padding-left: 1rem; */
   display: flex;
@@ -578,12 +577,11 @@ a img {
   &:hover {
     cursor: pointer;
   }
-  & img{
+  & img {
     object-fit: cover;
     width: 56px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-
   }
 }
 .sec2_box1_first_flex {
@@ -721,7 +719,6 @@ input::placeholder {
 
 .bottom {
   padding: 1rem;
-  margin-top: 1rem;
   display: flex;
   margin-left: 0;
 }
@@ -748,7 +745,18 @@ input::placeholder {
       font-size: 15px;
     }
   }
+  & .post_time {
+    display: flex;
+    align-items: center;
+    & .dot {
+      font-size: 1.5em;
+      font-weight: bolder;
+      display: flex;
+      align-items: center;
+    }
+  }
 }
+
 .btn_follow {
   background-color: white;
   font-size: 18px;
@@ -759,16 +767,21 @@ input::placeholder {
   color: rgb(166, 96, 231);
 }
 
-.sec2_img{
-margin-top: 2rem;
+.sec2_img {
+  margin-top: 1rem;
+}
+
+.sec3_today_puzzle {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .add_to_feed {
   display: flex;
   justify-content: space-between;
-  & .text_feed{
-font-size: 20px;
-font-weight: bold;
+  & .text_feed {
+    font-size: 20px;
+    font-weight: bold;
   }
   & .i {
     margin-top: 5px;
@@ -776,7 +789,7 @@ font-weight: bold;
     padding-top: 2px;
     font-style: italic;
     font-size: smaller;
-    font-weight:bolder;
+    font-weight: bolder;
     color: white;
     width: 15px;
     background-color: black;
@@ -785,14 +798,16 @@ font-weight: bold;
   }
 }
 
-
-.follow_ppl_first, .follow_ppl_second, .follow_ppl_third{
+.follow_ppl_first,
+.follow_ppl_second,
+.follow_ppl_third {
   margin-top: 1rem;
   display: flex;
   margin-left: 0;
-
 }
-.follow_ppl_first_text,.follow_ppl_second_text, .follow_ppl_third_text{
+.follow_ppl_first_text,
+.follow_ppl_second_text,
+.follow_ppl_third_text {
   margin: 1rem;
   margin-top: 0;
   margin-right: 0;
@@ -808,11 +823,11 @@ font-weight: bold;
     }
   }
 }
-  .follow_ppl_btn{
-    margin-top: -0.6rem;
-    height: 2.4rem;
-    width: 7rem;
-    margin-left: 3.8rem;
+.follow_ppl_btn {
+  margin-top: -0.6rem;
+  height: 2.4rem;
+  width: 7rem;
+  margin-left: 3.8rem;
   background-color: white;
   display: flex;
   gap: 0.3rem;
@@ -820,17 +835,15 @@ font-weight: bold;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  & i{
+  & i {
     font-size: 35px;
     font-weight: 200;
   }
-  & span{
+  & span {
     font-size: 18px;
     font-weight: bold;
-
   }
-    &:hover {
-        cursor: pointer;
-      }
+  &:hover {
+    cursor: pointer;
   }
-
+}
