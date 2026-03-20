@@ -18,6 +18,10 @@ body {
   top: 0;
   position: fixed;
   z-index: 100;
+  & i,
+  span {
+    color: grey;
+  }
 }
 .logoNsearch {
   display: flex;
@@ -33,6 +37,14 @@ body {
   input::placeholder {
     color: rgb(132, 131, 131);
     font-weight: 100;
+  }
+  & i {
+    color: rgb(63, 94, 179);
+    align-items: center;
+    font-size: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: none;
   }
 }
 .search-container {
@@ -54,15 +66,6 @@ body {
     padding-left: 11%;
   }
 }
-.btn_in {
-  background-color: rgba(86, 86, 212, 0.897);
-  color: white;
-  align-items: center;
-  font-size: 22px;
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: none;
-}
 .txt_in {
   font-weight: 900;
   font-size: 30px;
@@ -82,13 +85,23 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  &:hover {
-    cursor: pointer;
-  }
   & i {
     font-size: 25px;
   }
 }
+
+.hover:hover {
+  & i {
+    cursor: pointer;
+    color: black !important;
+  }
+  
+  & span {
+    cursor: pointer;
+    color: black !important;
+  }
+}
+
 .my_network {
   display: flex;
   flex-direction: column;
@@ -707,6 +720,11 @@ input::placeholder {
   margin: auto;
 }
 
+.bottom {
+  padding: 1rem;
+  display: flex;
+  margin-left: 0;
+}
 .sec2_box2_profile img {
   object-fit: cover;
   width: 3.3rem;
@@ -717,11 +735,6 @@ input::placeholder {
   }
 }
 
-.bottom {
-  padding: 1rem;
-  display: flex;
-  margin-left: 0;
-}
 .sec2_box2_text {
   margin: 1rem;
   margin-top: 0;
@@ -732,9 +745,15 @@ input::placeholder {
   & h3:hover {
     color: blue;
   }
-  & i,
-  span {
-    margin-left: 0rem;
+
+  .name {
+    & span {
+      color: rgb(139, 135, 135);
+    }
+    & i,
+    span {
+      margin-left: 0rem;
+    }
   }
   .profession {
     & p {
@@ -743,18 +762,27 @@ input::placeholder {
       }
       white-space: nowrap;
       font-size: 15px;
+      color: rgb(139, 135, 135);
     }
   }
   & .post_time {
     display: flex;
     align-items: center;
+    gap: 5px;
+    color: rgb(139, 135, 135);
     & .dot {
-      font-size: 1.5em;
-      font-weight: bolder;
+      font-size: 1em;
+      font-weight: bold;
       display: flex;
       align-items: center;
     }
+    & i {
+      color: rgb(89, 86, 86);
+    }
   }
+}
+.sec2_description {
+  margin: 1rem;
 }
 
 .btn_follow {
@@ -820,6 +848,7 @@ input::placeholder {
         cursor: pointer;
       }
       font-size: 15px;
+      color: grey;
     }
   }
 }
