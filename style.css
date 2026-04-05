@@ -253,7 +253,7 @@ body {
   }
 }
 
-.main_sec {
+.main_container {
   background-color: rgba(241, 236, 238, 0.813);
   display: flex;
   flex-direction: row;
@@ -264,17 +264,17 @@ body {
   position: relative !important;
 }
 
-#sec1 {
+#first_container {
   width: 15%;
   display: flex;
   flex-direction: column;
   position: fixed !important;
 }
-#sec2 {
+#second_container {
   width: 49%;
   margin-left: 20%;
 }
-#sec3 {
+#third_container {
   width: 26%;
   margin-left: 2%;
 }
